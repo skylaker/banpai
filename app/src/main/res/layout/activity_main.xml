@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用睿易班牌"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="自动升级"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_time"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置定时开关机："
+            android:layout_marginLeft="50dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/offTime"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:hint="定时关机时间"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/onTime"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="定时开机时间"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/certain"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="是否启用"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/btn_define"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="确定"/>
+    </LinearLayout>
+
+</LinearLayout>
